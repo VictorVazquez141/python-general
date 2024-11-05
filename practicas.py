@@ -179,3 +179,9 @@ print(find_odd([1,2,4,2,1]))
 
 # Modificación para el primer commit 
 
+'''función que duplique los numeros de una lista (lambda)'''
+def duplication(lista):
+    lista = list(map(lambda x: x*2, lista))
+    print(lista)
+    
+duplication([2,4,6,8,10])
