@@ -1,4 +1,4 @@
-# '''Ejercicios UDEMY'''
+'''EJERCICIOS ONLINE PARA PYTHON'''
 
 # datos_type = [int,str,float]
 
@@ -23,7 +23,7 @@
 # almacernar()
 # registro_usuario()
 
-# '''------------Calculo de daño por segundos'''
+'''------------Calculo de daño por segundos'''
 # def damage(damage, speed, time):
 #     if damage <0 or speed < 0:
 #         return "Invalid"
@@ -41,33 +41,33 @@
 # print(damage(-2,2, "hour"))
 
 
-# '''-------------Incremento de un numero entero al anterior'''
+'''-------------Incremento de un numero entero al anterior'''
 # def incremento(n):
 #     return n +1
 
 # print(incremento(9))
 
 
-# '''-----------------De minutos a segundos'''
+'''-----------------De minutos a segundos'''
 # def conversion(numero):
 #     return numero * 60
 
 # print(conversion(5)) # 300
 
-# '''------------Calcular area de un triangulo'''
+'''------------Calcular area de un triangulo'''
 # def triangulo(base,altura):
 #     return base * altura /2
 
 # print(triangulo(3,2))
 
-# '''--------------Encontrar el descuento'''
+'''--------------Encontrar el descuento'''
 # def descuento(price, desc):
 #     return desc*price /100
 
 # print(descuento(1500,50))
 
 
-# '''-----------Radianes en grados'''
+'''-----------Radianes en grados'''
 # from math import pi 
 # def radians(grados):
 #     return round(grados* (180/pi),1)
@@ -75,7 +75,7 @@
 # print(radians(20))
 
 
-# '''------------Numero de curzon'''
+'''------------Numero de curzon'''
 # def curzon(num):
 #     crz =  1 + 2**num % 1 + 2**num
 #     if crz % crz == 0:
@@ -85,14 +85,14 @@
 # print(curzon(10))
 
 
-# '''-----------Suma de resistencias'''
+'''-----------Suma de resistencias'''
 # def series(lst):
 #     return sum(lst)
 
 # print(series([1,3,5,6]))
 
 
-# '''-----------Calculadora basica'''
+'''-----------Calculadora basica'''
 # def calculadora(num1, signo, num2):
 #     if num1 == 0 or num2 == 0:
 #         return "No es divicible en 0"
@@ -107,28 +107,27 @@
 
 # print(calculadora(0, "*",9))
 
-# '''-----------¿Que tan pesado es?'''
+'''-----------¿Que tan pesado es?'''
 # from math import pi
 # def masa(r, h):
 #     return round(pi* (r**2) *h /1000,1)
 
 # print(masa(4,10))
 
-'''----Encontrar el numero impar
-def find_odd(lst):
-    lista=[]
-    # Recorrer lista ingresada
-    for i in lst:
-        while i:
-            print()
-            len(lst) += 1
+'''----Encontrar el numero impar'''
+# def find_odd(lst):
+#     lista=[]
+#     # Recorrer lista ingresada
+#     for i in lst:
+#         while i:
+#             print()
+#             len(lst) += 1
             
-        if i == map(len(lista)):
-            print("repetido")
+#         if i == map(len(lista)):
+#             print("repetido")
             
 
-print(find_odd([1,2,4,2,1]))
-'''
+# print(find_odd([1,2,4,2,1]))
 
 
 '''--------Devuelve factorial'''
@@ -180,8 +179,54 @@ print(find_odd([1,2,4,2,1]))
 # Modificación para el primer commit 
 
 '''función que duplique los numeros de una lista (lambda)'''
-def duplication(lista):
-    lista = list(map(lambda x: x*2, lista))
-    print(lista)
+# def duplication(lista):
+#     lista = list(map(lambda x: x*2, lista))
+#     print(lista)
     
-duplication([2,4,6,8,10])
+# duplication([2,4,6,8,10])
+
+'''Calculadora basica'''
+# def calculadora (a,b,signo):
+#     if signo == "+":
+#         print(a+b)
+#     if signo == "-":
+#         print(a-b)
+#     if signo == "*":
+#         print(a*b)
+#     if signo == "/":
+#         print(a/b)
+        
+# calculadora(2,5,"-")
+# calculadora(2,5,"+")
+# calculadora(2,5,"*")    
+    
+'''Ordenar lista'''
+# '''NOTA.
+#     .sort(): Se encarga de modificar la lista normal desde su lugar
+#     sorted(list): Devuelve la lista ordenada sin modificar el origen
+# '''
+# def ordenar(lista,orden):
+#     if orden == "asc": 
+#         print(sorted(lista))
+#     if orden == "desc": 
+#         print(sorted(lista,reverse=True))
+
+# ordenar([2,4,6,3,8,5],"asc")
+# ordenar([2,4,6,3,8,5],"desc")
+
+'''Purga y orgnaizar'''
+# Se ingresa una lista que devuelve la misma sin duplicados y  de min a max
+# def componer(lista):
+#     lista_org = sorted(lista) #Se organiza de menor a mayor
+#     lista_final = list(set(lista_org)) # set descarta y no permite los valores repetidos 
+#     print(lista_final)
+
+# componer([3,3,7,5,8,8,2,2,1])
+    
+'''Elimina el nombre repetido'''
+# def listas(nombres):
+#     lista_nombres = list(set(nombres))
+#     print(lista_nombres)
+
+# listas(['Victor','Manuel','Victor'])
+
